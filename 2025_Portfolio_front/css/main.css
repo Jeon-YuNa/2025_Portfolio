@@ -1,0 +1,45 @@
+/* 메인css */
+main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* padding-top: 22vh; */
+  letter-spacing: 0.2rem;
+}
+
+.title {
+  position: relative;
+  margin: 0 0 0 auto;
+  width: 65vw;
+  height: 40vh;
+  overflow: hidden;
+  z-index: 99;
+}
+.blurText {
+  width: 100%;
+  height: 100%;
+  mask-image: url("../img/mainlogo.png");
+  mask-position: center;
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}
+.blurBG {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  border: 1px solid #fff;
+  backdrop-filter: blur(26px);
+  color: #4444445e;
+  background-color: rgba(68, 68, 68, 0.1);
+}
+.pointer {
+  position: relative;
+  z-index: 1;
+  width: 40vw;
+  height: 40vw;
+  background-color: #efefef;
+  border-radius: 50%;
+  color: transparent;
+  background-image: radial-gradient(#efffb7b9, transparent 70%);
+  transition: all ease-in-out;
+}

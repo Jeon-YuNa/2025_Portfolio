@@ -1,0 +1,90 @@
+body {
+  background-color: #444;
+}
+header {
+  color: #efefef;
+}
+h1 {
+  background-image: url("../img/headerlogo-w.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scaleY(0.8);
+}
+/* 서브컴포넌트 */
+.textBox {
+  border: 1px solid #efefef;
+}
+.textBox .dot {
+  background-color: #efefef;
+}
+.textBox .gauge {
+  background-color: #efefef;
+}
+.textBox:hover span {
+  color: #444;
+}
+.textBox:hover .dot {
+  background-color: #444;
+}
+#project {
+  color: #efefef;
+  text-align: center;
+  /* letter-spacing: 0.2rem; */
+}
+#project h2 {
+  text-align: left;
+}
+#project p {
+  /* font-family: "GongGothicMedium"; */
+}
+.imgBox {
+  position: relative;
+  transform-origin: left;
+}
+.imgBox .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 2s;
+}
+.imgBox:hover .img {
+  transform: translateY(-10%);
+}
+.useSkills span {
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  cursor: default;
+}
+.btns {
+  width: calc(75% + 3vw);
+  position: absolute;
+  right: 0;
+  bottom: 3vw;
+}
+aside span,
+.btns span {
+  background-color: #efefef;
+  color: #444;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 100vw;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.4s;
+  border: 1px solid #efefef;
+}
+aside span:hover,
+.btns span:hover {
+  background-color: #444;
+  color: #efefef;
+}
+[data-aos="fade-up-text"] {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 2vh, 0);
+  transform: translate3d(0, 2vh, 0);
+}
+[data-aos="fade-up-text"].aos-animate {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+}
