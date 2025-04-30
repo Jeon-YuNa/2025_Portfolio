@@ -1,8 +1,7 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
-interface ProjectData {
+export interface ProjectData {
   id: number;
   title: string;
-  image: string | StaticImport;
+  // image: string | StaticImport;
   // image: StaticImageData;
   skills: string[];
   desc: string[];
@@ -10,11 +9,10 @@ interface ProjectData {
   likes: number;
 }
 
-export const ProjectData: ProjectData[] = [
+export const ProjectDataTest: ProjectData[] = [
   {
     id: 0,
     title: "matplaza",
-    image: "matplaza",
     skills: ["HTML", "CSS", "JS", "GSAP"],
     desc: [
       "GSAP 애니메이션을 활용해보기 위한 과제로 매트프라자를 선택하여 클론코딩한 프로젝트 입니다.",
@@ -28,7 +26,6 @@ export const ProjectData: ProjectData[] = [
   {
     id: 1,
     title: "todolist",
-    image: "todolist",
     skills: ["React", "TS"],
     desc: [
       "React를 활용한 첫 제작물로 todolist사이트를 제작하였습니다.",
@@ -42,7 +39,6 @@ export const ProjectData: ProjectData[] = [
   {
     id: 2,
     title: "nonymosaa",
-    image: "nonymosaa",
     skills: ["TS", "NestJS", "firebase"],
     desc: [
       "Next.js를 활용한 nonymosaa 쇼핑몰 클론코딩 프로젝트 입니다.",
@@ -56,7 +52,6 @@ export const ProjectData: ProjectData[] = [
   {
     id: 2,
     title: "TDcompany",
-    image: "TDcompany",
     skills: ["PHP", "CSS", "GSAP"],
     desc: [
       "전 회사의 홈페이지 리뉴얼을 맡아서 진행한 프로젝트 입니다.",
@@ -69,7 +64,6 @@ export const ProjectData: ProjectData[] = [
   {
     id: 2,
     title: "TDcompany",
-    image: "TDcompany",
     skills: ["PHP", "CSS", "GSAP"],
     desc: [
       "전 회사의 홈페이지 리뉴얼을 맡아서 진행한 프로젝트 입니다.",
@@ -82,7 +76,6 @@ export const ProjectData: ProjectData[] = [
   {
     id: 2,
     title: "binaryzerone",
-    image: "binaryzerone",
     skills: ["PHP", "GSAP", "webGL"],
     desc: [
       "전 회사의 개발팀 홈페이지를 기획부터 디자인과 개발까지 ",

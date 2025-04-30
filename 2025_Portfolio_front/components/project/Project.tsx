@@ -18,7 +18,7 @@ const Project = () => {
     });
   }, []);
 
-  const [projects, setProjects] = useState<ProjectData[]>([]);
+  const [projects, setProjects] = useState<ProjectData[] | null>(null);
 
   useEffect(() => {
     const fetchProjectsData = async () => {
@@ -27,18 +27,20 @@ const Project = () => {
         setProjects(fetchedProjects);
         if (fetchedProjects.length > 0) {
           setActiveTab(fetchedProjects[0].id);
-        } else {
-          setActiveTab(null);
         }
       } catch (err) {
         console.error("프로젝트 데이터 가져오기 실패:", err);
+        setProjects([]);
       }
     };
 
     fetchProjectsData();
   }, []);
+  if (projects === null) {
+    return null;
+  }
 
-  const activeProject = projects.find((p) => p.id === activeTab);
+  const activeProject = projects.find((v) => v.id === activeTab);
   return (
     <section id="project" className="flex">
       <aside className="flex flex-col gap-4 pt-10 w-[25%]">

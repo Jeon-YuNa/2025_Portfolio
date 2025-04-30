@@ -7,10 +7,10 @@ const Navigation = () => {
       data-aos="fade"
       data-aos-delay="600"
     >
-      <a target="_blank" href="tel:010-5318-3450">
+      <a href="tel:010-5318-3450">
         <TextBox text="tell" />
       </a>
-      <a target="_blank" href="mailto:hellodbsk@naver.com">
+      <a href="mailto:hellodbsk@naver.com">
         <TextBox text="email" />
       </a>
       <a target="_blank" href="https://github.com/Jeon-YuNa">

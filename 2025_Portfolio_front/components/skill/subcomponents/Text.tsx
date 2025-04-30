@@ -1,9 +1,13 @@
 "use client";
 
 import { useScrambleText } from "@/hooks/useScrambleText";
+import { useEffect, useState } from "react";
 
 const Text = ({ text }: { text: string }) => {
   const { displayText, startScramble } = useScrambleText(text);
+  useEffect(() => {
+    startScramble();
+  }, [startScramble]);
 
   return (
     <span

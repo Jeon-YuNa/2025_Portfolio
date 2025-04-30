@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { ProjectData } from "../data/projectData";
 import { ProjectImages } from "../data/image";
+import { ProjectData } from "@/types/projects";
 const ImageBox = ({
   siteURL,
-  image,
-}: Pick<ProjectData, "siteURL" | "image">) => {
+  title,
+}: Pick<ProjectData, "siteURL" | "title">) => {
   return (
     <div
       className="imgBox h-[30vh] mx-auto mb-3 overflow-hidden"
@@ -12,7 +12,7 @@ const ImageBox = ({
       data-aos-delay="200"
     >
       <a href={siteURL} target="_blank">
-        <Image src={ProjectImages[`${image}`]} alt="" className="img"></Image>
+        <Image src={ProjectImages[`${title}`]} alt="" className="img"></Image>
       </a>
     </div>
   );
