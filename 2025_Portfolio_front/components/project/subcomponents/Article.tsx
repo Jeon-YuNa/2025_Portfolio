@@ -22,7 +22,9 @@ const Article = ({ title, skills, desc, siteURL, likes, id }: ProjectData) => {
       </h2>
       <ImageBox siteURL={siteURL} title={title} />
       <UseSkills skills={skills} />
-      <Description desc={desc} />
+      <div className="desc">
+        <Description desc={desc} />
+      </div>
       <Buttons siteURL={siteURL} likes={likes} id={id} />
     </article>
   );

@@ -8,11 +8,11 @@ const Header = () => {
     <header className="py-6" data-aos="fade-down" data-aos-duration="1200">
       <div className="flex justify-between items-start">
         <a href="/">
-          <h1 className="mb-3 w-[19vw] h-[9vh]"></h1>
+          <h1 className="w-[14vw] h-[4vw]"></h1>
         </a>
         <Clock />
       </div>
-      <nav className="flex gap-12 justify-center pl-60">
+      <nav className="flex gap-10 justify-center">
         <a href="/projects">
           <TextBox text="Project" />
         </a>

@@ -6,9 +6,6 @@ header {
 }
 h1 {
   background-image: url("../img/headerlogo-w.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  transform: scaleY(0.8);
 }
 /* 서브컴포넌트 */
 .textBox {
@@ -87,4 +84,115 @@ aside span:hover,
   opacity: 1;
   -webkit-transform: none;
   transform: none;
+}
+@media screen and (max-width: 1080px) {
+  .clock {
+    background-color: #efefef;
+    color: #444;
+  }
+  #project {
+    flex-direction: column;
+  }
+  #project aside {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 4vw;
+    margin-top: 3vw;
+  }
+  #project aside span {
+    font-size: 1.6vw;
+  }
+  #project h2 {
+    font-size: 4vw;
+    padding-left: 4vw;
+    padding-top: 6vw;
+  }
+  #project .imgBox {
+    height: 20vh;
+    margin-bottom: 2vw;
+  }
+  #project .useSkills span {
+    font-size: 1.6vw;
+  }
+  #project .desc {
+    padding-bottom: 20vw;
+  }
+  #project .desc p {
+    font-size: 1.8vw;
+  }
+  #project .btns {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #efefef;
+    padding: 2vw 3vw;
+    gap: 3vw;
+  }
+  #project .btns a {
+    width: 100%;
+  }
+  #project .btns span {
+    width: 100%;
+    font-size: 1.8vw;
+    height: 5vw;
+    background-color: #444;
+    color: #efefef;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #project aside span {
+    font-size: 2vw;
+  }
+  #project h2 {
+    font-size: 5vw;
+  }
+  #project .useSkills span {
+    font-size: 2.2vw;
+  }
+  #project .desc p {
+    font-size: 2.2vw;
+  }
+  #project .btns span {
+    height: 7vw;
+    font-size: 2.6vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #project aside {
+    margin-top: 5vw;
+  }
+  #project aside span {
+    padding: 1.5vw 3vw;
+    font-size: 2.8vw;
+  }
+  #project h2 {
+    font-size: 7vw;
+    margin-top: 5vw;
+  }
+  #project .imgBox {
+    margin-bottom: 3vw;
+  }
+  #project .useSkills span {
+    font-size: 3.2vw;
+  }
+  #project .desc {
+    padding-left: 4vw;
+    padding-bottom: 40vw;
+  }
+  #project .desc p {
+    text-align: left;
+    font-size: 3.2vw;
+  }
+  #project .btns {
+    padding: 4vw 4vw;
+    gap: 4vw;
+  }
+  #project .btns span {
+    height: 10vw;
+    font-size: 3.5vw;
+  }
 }

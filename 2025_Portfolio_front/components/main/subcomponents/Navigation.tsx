@@ -2,8 +2,8 @@ import TextBox from "./TextBox";
 
 const Navigation = () => {
   return (
-    <nav
-      className="flex flex-col justify-end"
+    <div
+      className="link flex flex-col justify-end"
       data-aos="fade"
       data-aos-delay="600"
     >
@@ -19,7 +19,7 @@ const Navigation = () => {
       <a target="_blank" href="https://open.kakao.com/o/stGM4sCg">
         <TextBox text="kakaotalk" />
       </a>
-    </nav>
+    </div>
   );
 };
 export default Navigation;
