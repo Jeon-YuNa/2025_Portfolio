@@ -12,6 +12,9 @@
 .listWrap > div {
   /* height: fit-content;/ */
 }
+.listWrap > div > div {
+  width: 80%;
+}
 .listWrap::-webkit-scrollbar {
   width: 6px;
 }
@@ -51,4 +54,55 @@ button {
   background-color: #444;
   color: #efefef;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .listWrap {
+    max-height: 80vh;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .listWrap > div {
+    padding: 3vw 2vw;
+  }
+  .nickname {
+    font-size: 2.5vw;
+    margin-bottom: 2vw;
+  }
+  .content {
+    font-size: 2.2vw;
+  }
+  button {
+    font-size: 2.3vw;
+    top: 2vw;
+    right: 2vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .listWrap {
+    display: block;
+    max-height: 67vh;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+    padding-right: 4vw;
+    margin-top: 3vw;
+  }
+  .listWrap > div {
+    padding: 3vw 4vw;
+  }
+  .nickname {
+    font-size: 3.5vw;
+    margin-bottom: 3vw;
+  }
+  .content {
+    font-size: 3.2vw;
+  }
+  button {
+    font-size: 3.5vw;
+    top: 2vw;
+    right: 4vw;
+    padding: 2vw;
+  }
+
+  .writeBtn span {
+    font-size: 2.8vw;
+  }
 }

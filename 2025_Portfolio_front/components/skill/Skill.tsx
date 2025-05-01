@@ -20,15 +20,17 @@ const Skill = () => {
     <section id="skill" className="flex pt-16">
       <article data-aos="fade-down">
         <h2 className="font-bold text-4xl pt-6 mb-6">Skill Stacks</h2>
-        <div className="box p-10">
-          <Icons icon={<SiAdobephotoshop />} />
-          <Icons icon={<FaHtml5 />} />
-          <Icons icon={<FaCss3 />} />
-          <Icons icon={<FaJsSquare />} />
-          <Icons icon={<RiReactjsLine />} />
-          <Icons icon={<BiLogoTypescript />} />
-          <Icons icon={<SiNextdotjs />} />
-          <Icons icon={<SiNestjs />} />
+        <div>
+          <div className="box p-10">
+            <Icons icon={<SiAdobephotoshop />} />
+            <Icons icon={<FaHtml5 />} />
+            <Icons icon={<FaCss3 />} />
+            <Icons icon={<FaJsSquare />} />
+            <Icons icon={<RiReactjsLine />} />
+            <Icons icon={<BiLogoTypescript />} />
+            <Icons icon={<SiNextdotjs />} />
+            <Icons icon={<SiNestjs />} />
+          </div>
         </div>
       </article>
       <article data-aos="fade-up">

@@ -52,8 +52,8 @@ const Visitors = () => {
           visitors.map((v) => (
             <div key={v.id} className="mb-5 p-3 border rounded relative flex">
               <div>
-                <div className="font-bold mb-2">{v.nickname}</div>
-                <div>{v.content}</div>
+                <div className="nickname font-bold mb-2">{v.nickname}</div>
+                <div className="content">{v.content}</div>
               </div>
 
               {/* 내가 쓴 글이면 삭제 버튼 표시 */}
